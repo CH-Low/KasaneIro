@@ -23,7 +23,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="dark" />
-      <Text style={styles.text}>Kasane Iro Theme Card</Text>
+      <Text style={styles.text}>Kasane Iro Cards</Text>
       <Board finalCombinations={finalCombinations} />
       <View style={styles.buttonContainer}>
         <SecondaryButton style={styles.button} onPress={randomizeHandler}>
