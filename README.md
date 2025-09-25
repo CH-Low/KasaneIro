@@ -11,7 +11,7 @@ Note: Generating different combinations should be as simple as pressing a button
 This is an unofficial app developed as a private project and is not affiliated with GEO GAMES.
 You can purchase the Kasane Iro [here](https://www.amazon.co.jp/dp/B0F7QP24GL?ref_=pe_63408012_578253412_t_fed_asin_title)
 
-## Download TBC
+## Download
 You can download the android apk [here](https://github.com/CH-Low/KasaneIro/releases/tag/V1.0.0).
 
 ## Development
