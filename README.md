@@ -1,6 +1,6 @@
 # Kasane Iro
 
-This is a fan-made tool designed to generate combinations. 
+This is a fan-made tool designed to generate combinations with a total of 3 secondary colours for higher difficulty. 
 
 Note: Generating different combinations should be as simple as pressing a button. I aim to keep the tool straightforward and won't be adding additional features.
 
