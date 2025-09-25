@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { useEffect, useState } from 'react';
 
 import Board from './Board';
-import Data from './Data';
+import {DataAll, DataCenterEmpty} from './Data';
 import { SecondaryButton } from './Button'
 
 export default function App() {
@@ -11,14 +11,21 @@ export default function App() {
   const [finalCombinations, setFinalCombinations] = useState([...emptyCombinations]);
 
   useEffect(() => {
-    randomizeHandler()
+    randomizeHandlerAll()
   }, [],)
 
-  function randomizeHandler() {
-    const combinations = Data();
+  function randomizeHandlerCenterEmpty() {
+    const combinations = DataCenterEmpty();
     const combinationNumber = Math.floor(Math.random() * combinations.length);
     setFinalCombinations(combinations[combinationNumber]);
   }
+
+  function randomizeHandlerAll() {
+    const combinations = DataAll();
+    const combinationNumber = Math.floor(Math.random() * combinations.length);
+    setFinalCombinations(combinations[combinationNumber]);
+  }
+
 
   return (
     <View style={styles.container}>
@@ -26,8 +33,11 @@ export default function App() {
       <Text style={styles.text}>Kasane Iro Cards</Text>
       <Board finalCombinations={finalCombinations} />
       <View style={styles.buttonContainer}>
-        <SecondaryButton style={styles.button} onPress={randomizeHandler}>
-          Randomize
+        <SecondaryButton style={styles.button} onPress={randomizeHandlerCenterEmpty}>
+          Randomize 8
+        </SecondaryButton>
+        <SecondaryButton style={styles.button} onPress={randomizeHandlerAll}>
+          Randomize 9
         </SecondaryButton>
       </View>
     </View>
