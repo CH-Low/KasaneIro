@@ -13,6 +13,7 @@ You can purchase the Kasane Iro [here](https://www.amazon.co.jp/dp/B0F7QP24GL?re
 
 ## Download
 You can download the android apk [here](https://github.com/CH-Low/KasaneIro/releases/tag/V1.0.0).
+The web version is available [here](https://kasane-iro.web.app/).
 
 ## Development
 Developed in React Native with Expo.
